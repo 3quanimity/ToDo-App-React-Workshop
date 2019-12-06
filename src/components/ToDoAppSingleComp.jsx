@@ -56,16 +56,16 @@ export default class ToDoAppSingleComp extends Component {
 
   handleDelete = i => {
     // **** FILTER METHOD
-    // this.setState({
-    //     toDoList: this.state.toDoList.filter((el, index) => index !== i)
-    // });
+    this.setState({
+      toDoList: this.state.toDoList.filter((el, index) => index !== i)
+    });
 
     // **** SPLICE METHOD
-    let tempTab = this.state.toDoList;
-    tempTab.splice(i, 1);
-    this.setState({
-      toDoList: tempTab
-    });
+    // let tempTab = this.state.toDoList;
+    // tempTab.splice(i, 1);
+    // this.setState({
+    //   toDoList: tempTab
+    // });
   };
 
   handleDone = i => {
